@@ -5,15 +5,17 @@
 #include <cmath>
 
 int main() {
-	int k;
+	int k, prec;
 	double x;
 	std::cout << "x (-1; 1) = ";
 	std::cin >> x;
 	std::cout << "k = ";
 	std::cin >> k;
-	double e { pow(10, -k) }; // эпсилон
-	double r2 { acos(-1) / 2 }; // ряды Тейлора
-	double r1 { r2 - atan(x) }; // стандартная функция
+	std::cout << "precision: ";
+	std::cin >> prec;
+	double e{ pow(10, -k) }; // эпсилон
+	double r2{ acos(-1) / 2 }; // ряды Тейлора
+	double r1{ r2 - atan(x) }; // стандартная функция
 	int sign{ 1 }, exp{ -1 };
 	while (true) {
 		sign *= -1;
@@ -26,6 +28,7 @@ int main() {
 		r2 += t;
 	}
 	double delta = abs(r2 - r1);
+	std::cout.precision(prec);
 	std::cout << "Result using basic functions: " << r1 << std::endl;
 	std::cout << "Result using Taylor rows: " << r2 << std::endl;
 	std::cout << "d = " << delta << std::endl;
