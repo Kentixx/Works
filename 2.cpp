@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    srand(time(0));
+    srand(time(NULL));
 
     bool isRand{ 0 };
     int r;
@@ -37,11 +37,10 @@ int main()
         cout << "Недопустимый размер!" << endl;
         return -1;
     }
-
     else {
-        vector<int> vect(n);
+        int* vect = new int[n];
         if (isRand) {
-            for (size_t i = 0; i != n; i++) {
+            for (int i = 0; i != n; i++) {
                 vect[i] = rand() % (maxRand - minRand + 1) + minRand;
                 cout << vect[i] << " ";
             }
@@ -53,8 +52,8 @@ int main()
             }
         }
         cout << endl;
-       // }
-        // 1. Количество положительных элементов
+        // }
+         // 1. Количество положительных элементов
         int posNumbers = 0;
         for (int i = 0; i != n; i++) {
             if (vect[i] >= 0) {
@@ -104,5 +103,7 @@ int main()
             cout << vect[i] << " ";
         }
         cout << endl;
+        delete[]vect;
     }
+
 }
