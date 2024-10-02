@@ -18,7 +18,7 @@ void VectorPrint(const std::vector<std::vector<int>>& x)
 	}
 }
 
-void Transpose (const std::vector<std::vector<int>>& Vector, std::vector<std::vector<int>>& TVector)
+void Transpose(const std::vector<std::vector<int>>& Vector, std::vector<std::vector<int>>& TVector)
 {
 	for (int i = 0; i != TVector.size(); i++) {
 		for (int j = 0; j < TVector[0].size(); j++) {
@@ -27,7 +27,7 @@ void Transpose (const std::vector<std::vector<int>>& Vector, std::vector<std::ve
 	}
 }
 
-bool comp (const std::vector<int>& a, const std::vector<int>& b)
+bool comp(const std::vector<int>& a, const std::vector<int>& b)
 {
 	int a_sum(0), b_sum(0);
 	for (const auto& elem_a : a) {
@@ -69,7 +69,7 @@ int main() {
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				// std::cin >> matrix[i][j];
-				matrix[i][j] = rand() % 100 - 50;
+				matrix[i][j] = rand() % 1000 - 500;
 			}
 		}
 	}

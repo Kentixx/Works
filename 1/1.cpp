@@ -7,8 +7,10 @@
 int main() {
 	int k, prec;
 	double x;
-	std::cout << "x (-1; 1) = ";
-	std::cin >> x;
+	do {
+		std::cout << "x (-1; 1) = ";
+		std::cin >> x;
+	} while (x >= 1. || x <= -1.);
 	std::cout << "k = ";
 	std::cin >> k;
 	std::cout << "precision: ";
