@@ -26,7 +26,7 @@ bool isNumberString(const string& str)
 }
 
 
-vector<nstring> Repeated_String(const vector<string>& strs, int begin) 
+vector<nstring> Repeated_String(const vector<string>& strs, int begin) // считает количество повторяющихся строк в группе
 {
     vector<nstring> rep_strings;
     nstring result;
@@ -62,22 +62,7 @@ vector<nstring> Repeated_String(const vector<string>& strs, int begin)
     return rep_strings;
 }
 
-/*void First_and_End_Strings_Only(vector<int>& v_str) 
-{
-    int pointer = 0;
-    for (size_t i = 0; i < v_str.size() - 1; i++) {
-        if (v_str[i+1] - v_str[i] == 1) {
-            pointer = i + 1;
-            while (v_str[pointer+1] - v_str[pointer] == 1) {
-                pointer++;
-            }
-            auto iter = v_str.cbegin();
-            v_str.erase(iter+i+1, iter+pointer);
-        }
-    }
-}*/
-
-void First_Strings_Only(const vector<string>& strs, vector<int>& v_str) 
+void First_Strings_Only(const vector<string>& strs, vector<int>& v_str) // оставляет только номера первых строк групп
 {
     int pointer = 0;
     for (size_t i = 0; i < v_str.size() - 1; i++) {
@@ -94,10 +79,12 @@ void First_Strings_Only(const vector<string>& strs, vector<int>& v_str)
 
 int main() {
     setlocale(LC_ALL, "Russian");
+
     ifstream fin("5_input");
     vector<string> strings;
     vector<int> number_strings;
     string str;
+
     while (getline(fin, str)) {
         strings.emplace_back(str);
     }  
@@ -106,9 +93,10 @@ int main() {
             number_strings.push_back(i+1);
         }
     }
-    vector<int> first_numbers = number_strings;
+
+    vector<int>& first_numbers = number_strings;
     First_Strings_Only(strings, first_numbers);
-    //Dupl_Onestring_Groups(strings, first_numbers);
+
     ofstream fout1("string numbers");
     ofstream fout2("string groups");
     for (const auto& line : first_numbers) {
@@ -131,8 +119,4 @@ int main() {
         }
         fout2 << endl;
     }
-    /*vector<nstring> str1 = Repeated_String(strings, 9, 18);
-    for (nstring s_pair : str1) {
-        cout << s_pair.first << " " << s_pair.second << endl;
-    }*/
 }
