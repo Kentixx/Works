@@ -16,16 +16,16 @@ int main() {
 	std::cout << "precision: ";
 	std::cin >> prec;
 	long double e = pow(10, -k); // эпсилон
-	long double r2 {acos(-1) / 2}; // ряды Тейлора
-	long double r1 {r2 - atan(x)}; // стандартная функция
-	int sign{1}, exp{-1};
-	long double term = -x;
-	do {
+	long double r2{acos(-1) / 2}; // ряды Тейлора
+	long double r1{r2 - atan(x)}; // стандартная функция
+	const int sign{-1};
+	int exp{1};
+	long double term = (-1)*x;
+	while (fabs(term) >= e) {
 		r2 += term;
-		sign *= -1;
 		exp += 2;
-		term *= 1.*sign*(x*x)*(exp-2) / exp;
-	} while (fabs(term) < e);
+		term *= (sign*x*x*(exp-2)) / exp*1.;
+	}
 	long double delta = fabs(r2 - r1);
 	std::cout.precision(prec);
 	std::cout << "Result using basic functions: " << r1 << std::endl;
