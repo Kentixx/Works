@@ -79,7 +79,7 @@ void First_Strings_Only(const vector<string>& strs, vector<int>& v_str) // ос�
 int main() {
     setlocale(LC_ALL, "Russian");
 
-    ifstream fin("5_input");
+    ifstream fin("files/5_input");
     vector<string> strings;
     vector<int> number_strings;
     string str;
@@ -96,8 +96,8 @@ int main() {
     vector<int>& first_numbers = number_strings;
     First_Strings_Only(strings, first_numbers);
 
-    ofstream fout1("string numbers");
-    ofstream fout2("string groups");
+    ofstream fout1("files/string numbers");
+    ofstream fout2("files/string groups");
     for (const auto& line : first_numbers) {
         fout1 << line << endl;
     }

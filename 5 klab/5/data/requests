@@ -1,0 +1,9 @@
+is_exist 0
+is_exist 2
+add 3
+find_min
+delete 15
+delete 35
+is_exist 6
+add -67
+find_min
