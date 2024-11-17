@@ -20,6 +20,8 @@ public:
         } // перенос знака минус в числитель
     };
 
+    Fraction::Fraction(const Fraction&) {}
+    
     int getA() const {
         return a;
     }
@@ -41,7 +43,7 @@ public:
         return Fraction(new_a1 - new_a2, d);
     }
 
-    Fraction operator*(const Fraction &other) {
+    virtual Fraction operator*(const Fraction &other) {
         int new_a = a*other.a;
         int new_b = b*other.b;
         int nod = std::gcd(new_a, new_b);
@@ -52,7 +54,7 @@ public:
         return Fraction(new_a, new_b);
     }
 
-    Fraction operator/(const  Fraction &other) {
+    virtual Fraction operator/(const  Fraction &other) {
         int new_a = a*other.b;
         int new_b = b*other.a;
         int nod = std::gcd(new_a, new_b);

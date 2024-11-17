@@ -20,6 +20,8 @@ public:
         } // перенос знака минус в числитель 
     };
 
+    Fraction::Fraction(const Fraction&) {}
+    
     int getA() const {
         return a;
     }

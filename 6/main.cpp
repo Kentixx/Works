@@ -22,7 +22,7 @@ int main() {
     } while (b2 == 0);
     Fraction f1(a1, b1), f2(a2, b2);
 
-    std::cout << std::gcd(a1, b1) << " " << std::gcd(a2, b2) << std::endl;
+    //std::cout << std::gcd(a1, b1) << " " << std::gcd(a2, b2) << std::endl;
     Fraction f3 = f1 + f2, f4 = f1 - f2;
     std::cout << "Сумма: " << f3 << std::endl;
     std::cout << "Разность: " << f4 << std::endl;
