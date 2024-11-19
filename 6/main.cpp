@@ -1,9 +1,9 @@
 // Лаба 6. Простейший класс
 
+#include "fraction.h"
 #include <iostream>
 #include <numeric>
 #include <cmath>
-#include "fraction.h"
 
 int main() {
     setlocale(LC_ALL, "Russian");
