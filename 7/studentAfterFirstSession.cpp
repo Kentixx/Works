@@ -1,10 +1,13 @@
 #include "studentAfterFirstSession.h"
 
-
-StAfter1Session::StAfter1Session (const char* _name, unsigned _course, unsigned _group, unsigned _recording, array<float, 4> _marks_after_first) :
-        Student(_name, _course, _group, _recording), marks_after_first(_marks_after_first) {}
+StAfter1Session::StAfter1Session (const char* _name, unsigned _course, unsigned _group, array<float, 4> _marks_after_first) :
+        Student(_name, _course, _group), marks_after_first(_marks_after_first) {}
 
 StAfter1Session::StAfter1Session (const StAfter1Session &other) : Student(other), marks_after_first(other.marks_after_first) {}
+
+StAfter1Session::~StAfter1Session() {
+    delete[] name;
+}
 
 float StAfter1Session::getMark(unsigned &i) const {
     return marks_after_first[i-1];

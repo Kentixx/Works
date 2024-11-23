@@ -1,9 +1,9 @@
 // Лаба 6. Простейший класс
 
-#include "fraction.h"
 #include <iostream>
 #include <numeric>
 #include <cmath>
+#include "fraction.h"
 
 int main() {
     setlocale(LC_ALL, "Russian");
@@ -28,8 +28,9 @@ int main() {
     std::cout << "Разность: " << f4 << std::endl;
 
     Fraction f5 = f1 * f2;
-    std::cout << "Произведение: " << f5 << std::endl;
-    
+    //std::cout << "Произведение: " << f5 << std::endl;
+    std::cout << f1 << " * " << f2 << " = " << f5 << std::endl;
+
     if (f2.getA() == 0) {
         std::cout << "Частное: не определено" << std::endl;
     } else {

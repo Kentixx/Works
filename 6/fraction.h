@@ -19,7 +19,7 @@ public:
     Fraction operator+(const Fraction &other);
     Fraction operator-(const Fraction &other);
     Fraction operator*(const Fraction &other);
-    Fraction operator/(const  Fraction &other);
+    Fraction operator/(const Fraction &other);
 };
 
 std::ostream& operator<<(std::ostream &out, Fraction &frac);

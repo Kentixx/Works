@@ -1,11 +1,14 @@
 #include "studentAfterSecondSession.h"
 
-StAfter2Session::StAfter2Session (const char* _name, unsigned _course, unsigned _group, 
-unsigned _recording, array<float, 4> _marks_after_first, array<float, 5> _marks_after_second) :
-StAfter1Session(_name, _course, _group, _recording, _marks_after_first), marks_after_second(_marks_after_second) {}
+StAfter2Session::StAfter2Session (const char* _name, unsigned _course, unsigned _group, array<float, 4> _marks_after_first, array<float, 5> _marks_after_second) :
+StAfter1Session(_name, _course, _group, _marks_after_first), marks_after_second(_marks_after_second) {}
 
 StAfter2Session::StAfter2Session (const StAfter2Session &other) : 
 StAfter1Session(other), marks_after_second(other.marks_after_second) {}
+
+StAfter2Session::~StAfter2Session() {
+    delete[] name;
+}
 
 float StAfter2Session::getMark(unsigned &i) const {
         if (i >= 1 && i <= 4) {
@@ -16,7 +19,7 @@ float StAfter2Session::getMark(unsigned &i) const {
         }
         else 
             return -1;
-    } // 1-4 - оценки первой сессии, 5-9 - оценки второй сессии
+} // 1-4 - оценки первой сессии, 5-9 - оценки второй сессии 
 
 array<float, 5> StAfter2Session::getMarksSecondSession() const {
     return marks_after_second;

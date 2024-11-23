@@ -21,6 +21,7 @@ Fraction::Fraction(const Fraction &other) {
 int Fraction::getA() const {
     return a;
 }
+
 int Fraction::getB() const {
     return b;
 }
@@ -38,9 +39,10 @@ Fraction Fraction::operator-(const Fraction &other) {
 Fraction Fraction::operator*(const Fraction &other) {
     int new_a = a*other.a;
     int new_b = b*other.b;
-    if (std::gcd(new_a, new_b) != 1) {
-        new_a /= std::gcd(new_a, new_b);
-        new_b /= std::gcd(new_a, new_b);
+    int nod = std::gcd(new_a, new_b);
+    if (nod != 1) {
+        new_a /= nod;
+        new_b /= nod;
     }
     return Fraction(new_a, new_b);
 }
@@ -48,9 +50,10 @@ Fraction Fraction::operator*(const Fraction &other) {
 Fraction Fraction::operator/(const Fraction &other) {
     int new_a = a*other.b;
     int new_b = b*other.a;
-    if (std::gcd(new_a, new_b) != 1) {
-        new_a /= std::gcd(new_a, new_b);
-        new_b /= std::gcd(new_a, new_b);
+    int nod = std::gcd(new_a, new_b);
+    if (nod != 1) {
+        new_a /= nod;
+        new_b /= nod;
     }
     return Fraction(new_a, new_b);
 }

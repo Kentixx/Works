@@ -22,15 +22,18 @@ class Student {
     public:
         Student() = delete;
 
-        Student (const char* _name, unsigned _course, unsigned _group, unsigned _recording);
+        Student (const char* _name, unsigned _course, unsigned _group);
 
         Student (const Student &other);
+
+        ~Student();
 
         int getID() const;
         char* getName() const;
         unsigned getCourse() const;
         unsigned getGroup() const;
         const unsigned getRecording() const;
+        virtual float getAverageMark();
 
         void setName(const char* &_name);
         void setCourse(unsigned &_course);
@@ -38,3 +41,5 @@ class Student {
 };
 
 std::ostream& operator<<(std::ostream &out, const Student &student);
+void AverageMarkOfGroup(std::vector<Student*> &students, int &group);
+float AverageMarkofVector(std::vector<Student*> &students);
