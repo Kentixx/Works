@@ -6,26 +6,21 @@ StAfter1Session(_name, _course, _group, _marks_after_first), marks_after_second(
 StAfter2Session::StAfter2Session (const StAfter2Session &other) : 
 StAfter1Session(other), marks_after_second(other.marks_after_second) {}
 
-StAfter2Session::~StAfter2Session() {
-    delete[] name;
-}
-
 float StAfter2Session::getMark(unsigned &i) const {
-        if (i >= 1 && i <= 4) {
-            return marks_after_first[i-1];
-        }
-        else if (i > 4 && i <= 9) {
-            return marks_after_second[i-5];
-        }
-        else 
-            return -1;
+    if (i >= 1 && i <= 4) {
+        return marks_after_first[i-1];
+    }
+    else if (i > 4 && i <= 9) {
+        return marks_after_second[i-5];
+    }
+    return -1;
 } // 1-4 - оценки первой сессии, 5-9 - оценки второй сессии 
 
 array<float, 5> StAfter2Session::getMarksSecondSession() const {
     return marks_after_second;
 }
 
-void StAfter2Session::editMark(unsigned &i, float &new_mark) {
+void StAfter2Session::editMark(const unsigned &i, const float &new_mark) {
     if (i >= 1 && i <= 4) {
         marks_after_first[i-1] = new_mark;
     }
@@ -46,7 +41,7 @@ float StAfter2Session::getAverageMark() {
     return sum;
 } 
 
-std::ostream& operator<<(std::ostream &out, const StAfter2Session &student) {
+std::ofstream& operator<<(std::ofstream &out, const StAfter2Session &student) {
     out << "ID: " << student.getID() << std::endl;
     out << "Имя: " << student.getName() << std::endl;
     out << "Курс: " << student.getCourse() << std::endl;

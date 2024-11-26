@@ -9,15 +9,17 @@ course(_course), group(_group) {
     ID = rand() % 1000000;
     name = new char[40];
     recording = 100 + studentsCount;
+    studentsCount++;
     strcpy(name, _name);
 };
 
 Student::Student (const Student &other) {
+    name = new char[40];
     strcpy(name, other.name);
     course = other.course;
     group = other.group;
     recording = other.recording;
-};
+}
 
 Student::~Student() {
     delete[] name;
@@ -26,7 +28,7 @@ Student::~Student() {
 int Student::getID() const {
     return ID;
 }
-    
+
 char* Student::getName() const {
     return (char*)name;
 }
@@ -42,7 +44,7 @@ unsigned Student::getGroup() const {
 const unsigned Student::getRecording() const {
     return recording;
 }
-    
+
 void Student::setName(const char* &_name) {
     strcpy(name, _name);
 }
@@ -55,11 +57,11 @@ void Student::setGroup(unsigned &_group) {
     group = _group;
 }
 
-float getAverageMark() {
+float Student::getAverageMark() {
     return -1;
 }
 
-std::ostream& operator<<(std::ostream &out, const Student &student) {
+std::ofstream& operator<<(std::ofstream &out, const Student &student) {
     out << "ID: " << student.getID() << std::endl;
     out << "Имя: " << student.getName() << std::endl;
     out << "Курс: " << student.getCourse() << std::endl;
@@ -68,7 +70,8 @@ std::ostream& operator<<(std::ostream &out, const Student &student) {
     return out;
 }
 
-void AverageMarkOfGroup(std::vector<Student*> &students, int &group) {
+void AverageMarkOfGroup(std::vector<Student*> &students, const int &group) {
+    std::ofstream fout("files/students");
     int c1, c2;
     float average_score1, average_score2;
     for (Student* s : students) {
@@ -86,9 +89,9 @@ void AverageMarkOfGroup(std::vector<Student*> &students, int &group) {
             }
         }
     }
-    std::cout << "Средний балл в " << group << " группе" << std::endl;
-    std::cout << "После 1 сессии:" << average_score1/c1*1. << std::endl;
-    std::cout << "Средний балл в " << average_score2/c2*1. << std::endl;
+    fout << "Средний балл в " << group << " группе" << std::endl;
+    fout << "После 1 сессии: " << average_score1/c1*1. << std::endl;
+    fout << "После 2 сессии: " << average_score2/c2*1. << std::endl;
 }
 
 float AverageMarkofVector(std::vector<Student*> &students) {
@@ -105,3 +108,4 @@ float AverageMarkofVector(std::vector<Student*> &students) {
     }
     return average_vector_mark/count*1.;
 }
+
