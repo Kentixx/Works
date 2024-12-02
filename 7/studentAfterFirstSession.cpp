@@ -13,6 +13,12 @@ array<float, 4> StAfter1Session::getMarksFirstSession() const {
     return marks_after_first;
 }
 
+array<float, 5> StAfter1Session::getMarksSecondSession() const {
+    array<float, 5> emptyArray;
+    return emptyArray;
+}
+
+
 void StAfter1Session::editMark(const unsigned &i, const float &new_mark) {
     marks_after_first[i-1] = new_mark;
 }

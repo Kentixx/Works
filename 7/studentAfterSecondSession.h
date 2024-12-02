@@ -14,7 +14,7 @@ public:
     StAfter2Session (const StAfter2Session &other);
 
     float getMark(unsigned &i) const override;
-    array<float, 5> getMarksSecondSession() const;
+    array<float, 5> getMarksSecondSession() const override;
     void editMark(const unsigned &i, const float &new_mark) override;
     float getAverageMark() override;
 };

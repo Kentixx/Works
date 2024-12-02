@@ -12,6 +12,7 @@ public:
 
     virtual float getMark(unsigned &i) const;
     array<float, 4> getMarksFirstSession() const;
+    virtual array<float, 5> getMarksSecondSession() const;
     virtual void editMark(const unsigned &i, const float &new_mark);
     virtual float getAverageMark() override;
 };

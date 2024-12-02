@@ -70,28 +70,27 @@ std::ofstream& operator<<(std::ofstream &out, const Student &student) {
     return out;
 }
 
-void AverageMarkOfGroup(std::vector<Student*> &students, const int &group) {
-    std::ofstream fout("files/students");
+void AverageMarkOfGroup(std::vector<Student*> &students, const unsigned int &group) {
     int c1, c2;
     float average_score1, average_score2;
     for (Student* s : students) {
         if (s->getGroup() == group) {
-            if (typeid(*s) == typeid(Student)) {
-                continue;
+            if (s->getAverageMark() != -1) {
+                if (typeid(*s) == typeid(StAfter1Session)) {
+                    average_score1 += s->getAverageMark();
+                    average_score1 *= 4;
+                }
+                else if (typeid(*s) == typeid(StAfter2Session)) {
+                    average_score2 += s->getAverageMark();
+                    average_score2 *= 9;
+                }
             }
-            else if (typeid(*s) == typeid(StAfter1Session)) {
-                average_score1 += s->getAverageMark();
-                c1++;
-            }
-            else if (typeid(*s) == typeid(StAfter2Session)) {
-                average_score2 += s->getAverageMark();
-                c2++;
-            }
+            continue;
         }
     }
-    fout << "Средний балл в " << group << " группе" << std::endl;
-    fout << "После 1 сессии: " << average_score1/c1*1. << std::endl;
-    fout << "После 2 сессии: " << average_score2/c2*1. << std::endl;
+    cout << "Средний балл в " << group << " группе" << std::endl;
+    cout << "После 1 сессии: " << average_score1/4 << std::endl;
+    cout << "После 2 сессии: " << average_score2/9 << std::endl;
 }
 
 float AverageMarkofVector(std::vector<Student*> &students) {
