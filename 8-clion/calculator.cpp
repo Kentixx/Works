@@ -9,8 +9,8 @@ bool Calculator::isOperator(char c) {
 	return false;
 }
 
-int Calculator::precedence(char op) {
-	switch (op){
+int Calculator::precedence(char oper) {
+	switch (oper){
 		case '+':
 		case '-' :
 			return 1;
@@ -105,19 +105,21 @@ bool Calculator::processExpr(const std::string& expr){
 }
 
 bool Calculator::isCorrectExpr(const std::string& expr){
-	int count = 0;
+	int countBrackets = 0;
 	for (char c : expr) {
-		if (c == '(') {
-			++count;
+		switch (c) {
+			case ')':
+				++countBrackets;
+			break;
+			case '(':
+				--countBrackets;
+			break;
 		}
-		else if (c == ')') {
-			--count;
-			if (count < 0) {
-				return false;
-			}
+		if (countBrackets < 0) {
+			return false;
 		}
 	}
-	return count == 0;
+	return countBrackets == 0;
 }
 
 double Calculator::calculateExpr(const std::string& expr){

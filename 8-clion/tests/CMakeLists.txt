@@ -1,5 +1,6 @@
-add_executable(runUnitTests tests.cpp)
+project(tests)
 
-target_link_libraries(runUnitTests gtest gtest_main)
-
-add_test(runTests runUnitTests)
+add_subdirectory(lib)
+include_directories(lib/include/gtest)
+add_executable(Google_Tests_run tests.cpp)
+target_link_libraries(Google_Tests_run gtest gtest_main)

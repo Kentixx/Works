@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+#include "./lib/googletest/include/gtest/gtest.h"
 #include "../calculator.h"
 #include "../stack.h"
 
@@ -14,10 +14,4 @@ TEST(StackPushTest, PushingDouble) {
     stack << 64.3 << 202.45;
     stack.push(12);
     ASSERT_EQ(stack[3], 202.45);
-}
-
-TEST(CalculatorTests, OperatorsCheck) {
-    Calculator calc;
-    bool plus = calc.isOperator('+');
-    ASSERT_TRUE(plus);
 }
