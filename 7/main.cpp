@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    //setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "Russian");
     ofstream fout("files/students");
     array<float, 4> marks1 = {5.7, 8.9, 3.5, 9};
     array<float, 5> marks2 = {3.5, 7.8, 5.0, 9.4, 6.3};
@@ -33,7 +33,7 @@ int main() {
 
     s4.editMark(2, 9.24);
     fout << "Stud's average: " << AverageMarkofVector(stud) << std::endl;
-    AverageMarkOfGroup(stud, 6); // пофиксить методы подсчёта средних баллов
+    //AverageMarkOfGroup(stud, 6); // пофиксить методы подсчёта средних баллов
 
     fout << s1 << std::endl;
     fout << s2 << std::endl;
