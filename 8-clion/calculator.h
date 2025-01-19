@@ -1,26 +1,19 @@
-#ifndef CALCULATOR_H
-#define CALCULATOR_H
-
 #pragma once
 #include "stack.h"
-#include <iostream>
 #include <string>
-#include <cmath>
 #include <cctype>
 #include <sstream>
 
 class Calculator {
 private:
 	Stack<char> operators;
-	//Stack<double> operands;
+	Stack<double> operands;
 public:
-	int precedence(char op);
-	bool processExpr(const std::string& expr);
-	bool isCorrectExpr(const std::string& expr);
-	double calculateExpr(const std::string& expr);
-	bool isOperator(char c);
-	std::string infixToPostfix(const std::string& expr);
+	static bool isOperator(const char &c);
+	static int precedence(const char &oper);
+	bool processExpression(const std::string& expr);
+	bool isCorrectExpression(const std::string& expr);
+	double calculateExpression(const std::string& expr);
+	std::string inFixToPostfix(const std::string& expr);
 	double calculatePostfix(const std::string& postfix);
 };
-
-#endif
