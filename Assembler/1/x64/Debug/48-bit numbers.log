@@ -1,0 +1,14 @@
+﻿  48-bit numbers.cpp
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(8,5): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(9,9): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(9,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(9,13): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(10,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(10,9): error C2065: add: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(10,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(10,13): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(11,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(11,9): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(11,13): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "result"
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(11,21): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\Lab 1\48-bit numbers\48-bit numbers.cpp(12,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"

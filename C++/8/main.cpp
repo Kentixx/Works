@@ -24,7 +24,7 @@ int main() {
     cout << stackChar << "|| " << ch << endl;
 
     Calculator calc;
-    std::string expression1 = "(4 + 9*(8-1)) / (3 - 6/8)";
+    std::string expression1 = "(((())))";
     cout << "Postfix: " <<  calc.inFixToPostfix(expression1) << endl;
     cout << expression1 << " = " << calc.calculateExpression(expression1) << endl;
 
