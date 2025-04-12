@@ -1,0 +1,20 @@
+﻿  IntArithmetics.cpp
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(9,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(10,3): error C2065: mov: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(10,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "dword"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(10,7): error C2065: dword: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(11,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(11,3): error C2065: mov: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(11,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "dword"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(11,7): error C2065: dword: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(12,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(12,3): error C2065: mov: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(12,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(12,7): error C2065: ecx: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(13,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "count_fib"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,3): error C2065: mov: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,7): error C2065: eax: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,17): error C2760: синтаксическая ошибка: непредвиденный элемент "+". Ожидается ","
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,20): error C2065: ecx: необъявленный идентификатор
+D:\Programs\GitFlow\Works\IntArithmetics\IntArithmetics.cpp(14,32): error C2059: синтаксическая ошибка: ]
