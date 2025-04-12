@@ -37,44 +37,54 @@ int main() {
 	/* ----------------------------------- */
 	
 	int num, den;
-	std::cout << "Enter numerator, denominator:" << std::endl;
-	std::cin >> num >> den;
-	bool isNegative;
+	do {
+		std::cout << "Enter numerator, denominator:" << std::endl;
+		std::cin >> num >> den;
+		if (den <= 0) {
+			std::cout << "Denominator can't be less or equal 0!" << std::endl;
+		}
+	} while (den <= 0);
 	__asm {
-		push num
-		push den
 		mov eax, num
 		mov ebx, den
 
 		cmp eax, 0
-		jge GCD
+		jg GCD
+		je _END
 
 		neg eax
-		mov byte ptr [isNegative], 1
 	GCD:
 		cmp eax, ebx
 		je DIVISION
-
+		jg GREATER
 		jl LESS
+
+	GREATER:
 		sub eax, ebx
 		jmp GCD
+
 	LESS: 
 		sub ebx, eax
 		jmp GCD
 
 	DIVISION:
-		mov ecx, ebx
-		xor edx, edx
+		mov ecx, eax
+		mov eax, num
+		cdq
 		idiv ecx
-
-		cmp byte ptr [isNegative], 0
-		je END_
-
-		neg eax
-	END_:
 		mov num, eax
-		mov den, ebx
+
+		mov eax, den
+		cdq
+		idiv ecx
+		mov den, eax
+
+	_END:
 	}
-	std::cout << "Result fraction: " << num << " / " << den << std::endl;
+	if (den == 1) {
+		std::cout << "Result fraction: " << num << std::endl;
+	} else {
+		std::cout << "Result fraction: " << num << " / " << den << std::endl;
+	}
 	return 0;
 }
