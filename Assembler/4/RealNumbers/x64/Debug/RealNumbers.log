@@ -1,0 +1,107 @@
+﻿  RealNumbers.cpp
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(7,7): warning C4215: нестандартное расширение: long float
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(8,7): warning C4215: нестандартное расширение: long float
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(38,8): warning C4215: нестандартное расширение: long float
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(40,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(41,4): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(41,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(41,8): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(42,4): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "BEGC1"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(43,4): error C2065: cmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(43,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(43,8): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(44,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jl"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(44,5): error C2065: jl: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(44,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT1"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(44,8): error C2065: EXIT1: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(45,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(45,5): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(45,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(45,12): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(46,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(46,5): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(46,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(46,9): error C2065: ebx: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(47,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "BEGC2"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(48,4): error C2065: cmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(48,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(48,8): error C2065: ebx: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(49,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jle"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(49,5): error C2065: jle: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(49,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT2"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(49,9): error C2065: EXIT2: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(50,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(50,5): error C2065: sub: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(50,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(50,9): error C2065: ebx: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(51,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(51,5): error C2065: jmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(51,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "BEGC2"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(51,9): error C2065: BEGC2: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(52,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT2"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(53,4): error C2065: cmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(53,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(53,8): error C2065: ebx: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(54,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FLD1"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(54,5): error C2065: FLD1: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(55,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FILD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(55,5): error C2065: FILD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(55,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(56,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FDIV"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(56,5): error C2065: FDIV: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(57,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FILD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(57,5): error C2065: FILD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(57,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(58,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FDIV"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(58,5): error C2065: FDIV: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(59,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FLD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(59,5): error C2065: FLD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(59,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(60,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "je"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(60,5): error C2065: je: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(60,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SIT"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(60,8): error C2065: SIT: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(61,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FADD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(61,5): error C2065: FADD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(61,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ST"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(61,10): error C2065: ST: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(61,14): error C3861: ST: идентификатор не найден
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(62,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(62,5): error C2065: jmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(62,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT3"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(62,9): error C2065: EXIT3: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(63,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "SIT"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(64,4): error C2065: FSUB: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(64,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ST"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(64,9): error C2065: ST: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(64,13): error C3861: ST: идентификатор не найден
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(65,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT3"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(66,5): error C2065: FXCH: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(67,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FSTP"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(67,5): error C2065: FSTP: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(67,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(68,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FSTP"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(68,5): error C2065: FSTP: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(68,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(69,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(69,5): error C2065: sub: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(69,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(69,9): error C2065: eax: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(70,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "jmp"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(70,5): error C2065: jmp: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(70,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "BEGC1"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(70,9): error C2065: BEGC1: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(71,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "EXIT1"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(72,4): error C2065: mov: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(72,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(73,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FILD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(73,5): error C2065: FILD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(73,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(74,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FLD"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(74,5): error C2065: FLD: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(74,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(75,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "FMUL"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(75,5): error C2065: FMUL: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(75,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ST"
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(75,10): error C2065: ST: необъявленный идентификатор
+D:\Programs\Assembler\RealNumbers\RealNumbers.cpp(75,10): error C1003: число ошибок превышает 100; остановка компиляции
